@@ -1,12 +1,12 @@
-package no.example;
+package no.fooq.example;
 
-import io.vavr.collection.List;
 import lombok.Value;
 
 import java.time.OffsetDateTime;
+import java.util.List;
 
 @Value(staticConstructor = "of")
-public class TransactionsDTO {
+class Transactions {
     OffsetDateTime id;
-    List<String> data;
+    List<Transaction> transactions;
 }
